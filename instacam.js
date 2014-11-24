@@ -191,14 +191,11 @@
     	document.getElementById('record').style.display = 'none';
     }*/
 
-<<<<<<< HEAD
-=======
     canvas.addEventListener('click', function() {
         canvas.className = (canvas.className == 'full' ? 'unscaled' : 'full');
         return false;
     }, false);
 
->>>>>>> bcc328b31cb846f1bbb931fa07e03109fb04bd29
     if (!window.WebSocket)
         setNotice("Your Browser doesn't Support WebSockets. Please use Firefox, Chrome, Safari or IE10");
     else {
@@ -206,7 +203,6 @@
         connect();
     }
 
-<<<<<<< HEAD
     /*window.addEventListener('resize', function() {
         var height = window.innerHeight,
             width = window.innerWidth;
@@ -219,6 +215,4 @@
         }
     });*/
 
-=======
->>>>>>> bcc328b31cb846f1bbb931fa07e03109fb04bd29
 })(window);
