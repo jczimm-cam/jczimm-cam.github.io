@@ -1,3 +1,245 @@
+<<<<<<< HEAD
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+html, body {
+    background-color: #222;
+    color: #fff;
+    font-family: "Ubuntu";
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+}
+a {
+    color: #FF8534;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+}
+div#videoContainer {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+canvas#videoCanvas {
+    background-color: #000;
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+div#videoOverlay {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+div#copy {
+    text-shadow: 0px 0px 2px #000;
+    font-size: 10px;
+    position: absolute;
+    bottom: 16px;
+    right: 14px
+}
+div#copy img {
+    width: 20px;
+    height: 20px;
+    border: 0;
+}
+div#notice {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+}
+/* Recording
+-------------------------------------------------*/
+
+div#recordBox {
+    font-size: 12px;
+    position: absolute;
+    left: 12px;
+    bottom: 8px;
+}
+span#record {
+    cursor: pointer;
+}
+span#recordDot {
+    font-size: 32px;
+}
+span#recordNotice {
+    text-transform: uppercase;
+    vertical-align: bottom;
+    line-height: 32px;
+}
+span#recordStats {
+    display: none;
+    margin-left: 0.5em;
+    font-size: 10px;
+    vertical-align: bottom;
+    line-height: 32px;
+}
+span#recordLinkBox {
+    color: #fff;
+    display: none;
+    font-size: 12px;
+    vertical-align: bottom;
+    line-height: 32px;
+}
+a#recordLink {
+    vertical-align: bottom;
+    line-height: 32px;
+}
+span#recordDisabled {
+    display: none;
+    vertical-align: bottom;
+    line-height: 32px;
+    color: #FF8534;
+}
+span#record.waiting {
+    color: rgba(128, 128, 128, 0.3);
+}
+span#record.recording {
+    color: #ff3e2b;
+}
+span#record.available {
+    color: rgba(255, 255, 255, 0.5);
+}
+span#record.unavailable {
+    display: none;
+}
+span#record:hover, span#record.recording:hover, span#record.available:hover {
+    color: #fff;
+}
+/* Spinner Animation | http://codepen.io/jczimm/pen/gbpYEL
+-------------------------------------------------*/
+
+.spinner {
+    position: absolute;
+    margin: auto calc(50% - 130px);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 200px;
+    list-style: none;
+    overflow: hidden;
+}
+li {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 500px;
+    animation: zoom 3s infinite;
+    -o-animation: zoom 3s infinite;
+    -ms-animation: zoom 3s infinite;
+    -moz-animation: zoom 3s infinite;
+    -webkit-animation: zoom 3s infinite;
+    transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+}
+li {
+    background: #d48800;
+}
+li:nth-child(2) {
+    animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    -ms-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+}
+li:nth-child(3) {
+    animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    -ms-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+}
+li:nth-child(4) {
+    animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    -ms-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+}
+li:nth-child(5) {
+    animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    -ms-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+}
+@keyframes zoom {
+    from {
+        transform: scale(0);
+        opacity: 0.77;
+    }
+    30% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+@-o-keyframes zoom {
+    from {
+        -o-transform: scale(0);
+        opacity: 0.77;
+    }
+    30% {
+        -o-transform: scale(1);
+    }
+    100% {
+        -o-transform: scale(1);
+        opacity: 0;
+    }
+}
+@-moz-keyframes zoom {
+    from {
+        -moz-transform: scale(0);
+        opacity: 0.77;
+    }
+    30% {
+        -moz-transform: scale(1);
+    }
+    100% {
+        -moz-transform: scale(1);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+        opacity: 0.77;
+    }
+    30% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0;
+    }
+}
+=======
 html,body {
 	background-color: #222;
 	color: #fff;
@@ -148,3 +390,4 @@ span#record:hover, span#record.recording:hover, span#record.available:hover { co
 	animation: spin 1s infinite linear;
 }
 
+>>>>>>> bcc328b31cb846f1bbb931fa07e03109fb04bd29
