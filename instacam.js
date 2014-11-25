@@ -191,11 +191,6 @@
     	document.getElementById('record').style.display = 'none';
     }*/
 
-    canvas.addEventListener('click', function() {
-        canvas.className = (canvas.className == 'full' ? 'unscaled' : 'full');
-        return false;
-    }, false);
-
     if (!window.WebSocket)
         setNotice("Your Browser doesn't Support WebSockets. Please use Firefox, Chrome, Safari or IE10");
     else {
